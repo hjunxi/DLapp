@@ -1,14 +1,14 @@
 <template>
   <div class="other-content">
     <!-- {{name}}--{{id}} -->
-    <wj-banner 
+    <hjx-banner 
      :banner-list="bannerList"
      margin-top="10"
      padding-left="10"
      padding-right="10"
      :img-size="475/1000"
      radius="16"
-    ></wj-banner>
+    ></hjx-banner>
     <!-- 专题 -->
     <div class="special-content">
       <h1>专题</h1>
@@ -19,7 +19,7 @@
       </ul>
 
       <!-- 下面小分类商吕 -->
-      <wj-home-goods v-for="item in classifyList" :key="item.id" :goods-list="item"></wj-home-goods>
+      <hjx-home-goods v-for="item in classifyList" :key="item.id" :goods-list="item"></hjx-home-goods>
 
       
     </div>
@@ -29,8 +29,8 @@
 </template>
 
 <script>
-  import WjBanner from '../base/WjBanner.vue'
-  import WjHomeGoods from './child/WjHomeGoods.vue'
+  import hjxBanner from '../base/hjxBanner.vue'
+  import hjxHomeGoods from './child/hjxHomeGoods.vue'
 
   export default {
     props : ['name', 'id'],
@@ -78,8 +78,8 @@
     },
 
     components : {
-      WjBanner,
-      WjHomeGoods
+      hjxBanner,
+      hjxHomeGoods
     },
   }
 </script>

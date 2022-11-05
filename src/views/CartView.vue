@@ -1,7 +1,7 @@
 <template>
 	<div id="cart-view">
 		<!-- 导航栏 -->
-		<wj-navbar title="购物车" :left-arrow="false"></wj-navbar>
+		<hjx-navbar title="购物车" :left-arrow="false"></hjx-navbar>
 
 		<!-- 空状态 -->
 		<van-empty
@@ -17,7 +17,7 @@
 			
 			<div class="box">
 				<div class="checkbox-content">
-					<van-checkbox v-model="item.isChecked" checked-color="#cc3a8c" />
+					<van-checkbox v-model="item.isChecked" checked-color="#33B8FF" />
 				</div>
 
 				<div class="goods-content">
@@ -50,23 +50,23 @@
 
 			<!-- 右侧隐藏删除按钮 -->
 			<template #right>
-				<van-button @click="clickCellH(item.goods_id)" square text="删除" color="#cc3a8c" class="delete-button" />
+				<van-button @click="clickCellH(item.goods_id)" square text="删除" color="#33B8FF" class="delete-button" />
 			</template>
 
 		</van-swipe-cell>
 
 		<!-- 提交 -->
 		<van-submit-bar
-		 class="wj-submit-bar"
+		 class="hjx-submit-bar"
 		 :price="priceAll" 
 		 button-text="提交订单" 
 		 @submit="onSubmitHandler"
-		 button-color="#cc3a8c"
+		 button-color="#33B8FF"
 		>
-			<van-checkbox @change="changeAllH" v-model="checkedAll" checked-color="#cc3a8c">全选</van-checkbox>
+			<van-checkbox @change="changeAllH" v-model="checkedAll" checked-color="#33B8FF">全选</van-checkbox>
 			<template #tip>
 				<span style="color: #666;">你的收货地址不支持配送, </span>
-				<span style="color:#cc3a8c" @click="onClickLinkH">修改地址</span>
+				<span style="color:#33B8FF" @click="onClickLinkH">修改地址</span>
 			</template>
 		</van-submit-bar>
 
@@ -74,7 +74,7 @@
 </template>
 
 <script>
-	import WjNavbar from '../components/WjNavbar.vue'
+	import hjxNavbar from '../components/hjxNavbar.vue'
 	import qs from 'qs'
 
 	export default {
@@ -188,7 +188,7 @@
 		},
 
 		components : {
-			WjNavbar
+			hjxNavbar
 		}
 		
 	}
@@ -227,7 +227,7 @@
 	}
 
 	// 提交条样式
-	.wj-submit-bar{
+	.hjx-submit-bar{
 		bottom: 49px;
 	}
 

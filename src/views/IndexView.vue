@@ -2,7 +2,7 @@
 	<div id="index-view">
 		<van-sticky>
 			<!-- 搜索框 -->
-			<wj-search show-innerleft disabled @click="toSearchHandler"></wj-search>
+			<hjx-search show-innerleft disabled @click="toSearchHandler"></hjx-search>
 		</van-sticky>
 
 		<!-- 导航分类 -->
@@ -10,7 +10,7 @@
 		 sticky 
 		 offset-top="54" 
 		 v-model:active="active"
-		 title-active-color="#CC3A8C"
+		 title-active-color="#33B8FF"
 		 title-inactive-color="#666"
 		 line-width="30"
 		 >
@@ -38,13 +38,13 @@
 
 <script>
 	// 引入组件
-	import WjSearch from '../components/WjSearch.vue'
+	import hjxSearch from '../components/hjxSearch.vue'
 	import HomeContent from '../components/home/HomeContent.vue'
 	import OtherContent from '../components/home/OtherContent.vue'
 
 	export default {
 		components : {
-			WjSearch,
+			hjxSearch,
 			HomeContent,
 			OtherContent
 		},

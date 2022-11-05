@@ -3,7 +3,7 @@
 	/* --van-tabbar-background-color : rgba(255, 0,0,.5); */
 	/* --van-button-default-background-color : red; */
 
-	--van-tabs-bottom-bar-color : #CC3A8C;
+	--van-tabs-bottom-bar-color : #33B8FF;
 
 	--van-nav-bar-background-color : #24272F;
 	--van-nav-bar-arrow-size : 18px;
@@ -12,5 +12,5 @@
 	--van-nav-bar-title-text-color : #fff;
 	--van-badge-border-width : 0px;
 	--van-badge-background-color :#F8239B;
-	--van-stepper-button-round-theme-color : #CC3A8C;
+	--van-stepper-button-round-theme-color : #33B8FF;
 }

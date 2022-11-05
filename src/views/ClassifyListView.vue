@@ -2,8 +2,8 @@
   <div id="classify-list">
 
     <!-- 分类列表里面 调用导航栏 -->
-    <wj-navbar title="商品列表" left-text="返回" :show-icon-cart="showIconCart" :cart-number="cartNumber"></wj-navbar>
-    <!-- <wj-navbar title="商品列表" :show-icon-cart="false" cart-number="6"></wj-navbar> -->
+    <hjx-navbar title="商品列表" left-text="返回" :show-icon-cart="showIconCart" :cart-number="cartNumber"></hjx-navbar>
+    <!-- <hjx-navbar title="商品列表" :show-icon-cart="false" cart-number="6"></hjx-navbar> -->
 
     <h1 v-for="item in 30">上{{item}}</h1>
 
@@ -12,7 +12,7 @@
 
 <script>
 
-import WjNavbar from '../components/WjNavbar.vue'
+import hjxNavbar from '../components/hjxNavbar.vue'
 
 export default {
 
@@ -48,7 +48,7 @@ export default {
   },
 
   components : {
-    WjNavbar,
+    hjxNavbar,
   }
 }
 

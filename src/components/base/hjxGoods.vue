@@ -48,7 +48,7 @@ export default {
     &>p:nth-of-type(3){
      font-size: 20px;
     //  font-family: Arial, Helvetica, sans-serif;
-     color: #CC3A8C;
+     color: #33B8FF;
      font-weight: bold;
      line-height: 30px;
     }

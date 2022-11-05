@@ -1,17 +1,17 @@
 <template>
   <div id="product-view">
 
-    <wj-navbar left-text="返回" title="商品详情" :show-icon-cart="showIconCart" :cart-number=" cartNumber"></wj-navbar>
+    <hjx-navbar left-text="返回" title="商品详情" :show-icon-cart="showIconCart" :cart-number=" cartNumber"></hjx-navbar>
     
     <div v-if="isSoldOut">商品已下架</div>
 
     <div v-else>
 
       <!-- 调用轮播图 -->
-      <wj-banner 
+      <hjx-banner 
       :banner-list="bannerList"
       :img-size="1500/1500"
-      ></wj-banner>
+      ></hjx-banner>
 
       <!-- 单元格 -->
       <van-cell @click="showPopup = !showPopup" title="选择颜色、尺码、数量" icon="certificate" is-link />
@@ -30,7 +30,7 @@
         <h1>数量</h1>
         <h1>大小</h1>
 
-        <van-button @click="clickConfirmH" block round color="#cc3a8c" type="default">确定</van-button>
+        <van-button @click="clickConfirmH" block round color="#33B8FF" type="default">确定</van-button>
       </van-action-sheet>
 
       <h2 v-for="a in 30">h2{{a}}</h2>
@@ -42,10 +42,10 @@
          @click="isStar = !isStar" 
          :icon="isStar ? 'star' : 'star-o'" 
          :text="isStar ? '已收藏' : '收藏'" 
-         :color="isStar ? '#cc3a8c' : '#666'"
+         :color="isStar ? '#33B8FF' : '#666'"
         />
         <van-action-bar-button 
-         color="linear-gradient(to right, #FA5FB6, #cc3a8c)" @click="clickAddBuyH('加入购物车')" type="warning" text="加入购物车" />
+         color="linear-gradient(to right, #FA5FB6, #33B8FF)" @click="clickAddBuyH('加入购物车')" type="warning" text="加入购物车" />
         <van-action-bar-button
         color="linear-gradient(to right, #ac3a88, #863161)"
         @click="clickAddBuyH('立即购买')" type="danger" text="立即购买" />

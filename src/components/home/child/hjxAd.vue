@@ -1,6 +1,6 @@
 <template>
 
-  <div class="wj-ad">
+  <div class="hjx-ad">
     <div class="ad-l">
       <img :src="adList[0].src" alt="">
       <img :src="adList[1].src" alt="">
@@ -29,7 +29,7 @@
 </script>
 
 <style lang="less" scoped>
-  .wj-ad{
+  .hjx-ad{
     margin-top:10px;
     padding: 0px 10px;
     display: flex;

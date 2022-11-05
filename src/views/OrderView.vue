@@ -1,7 +1,7 @@
 <template>
   <div id="order-view">
     <!-- 调用头部导航栏 -->
-    <wj-navbar title="确认订单" left-text="返回"></wj-navbar>
+    <hjx-navbar title="确认订单" left-text="返回"></hjx-navbar>
   </div>
 </template>
 <script>

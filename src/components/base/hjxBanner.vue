@@ -1,17 +1,17 @@
 <template>
   <van-swipe 
-   class="wj-banner-swipe"
+   class="hjx-banner-swipe"
    :style="{'margin-top' : marginTop+'px'}"
    :autoplay="3000"
    loop
    :height="bannerHeight"
-   indicator-color="#CC3A8C"
+   indicator-color="#33B8FF"
   >
     <van-swipe-item 
      v-for="item in bannerList" 
      :key="item.goods_id"
      @click="toProductHandler(item.goods_id)" 
-     class="wj-banner-item"
+     class="hjx-banner-item"
      :style="{'padding-left' : paddingLeft+'px', 'padding-right':paddingRight+'px'}"
     >
       <van-image :radius="radius" lazy-load :src="item.goods_thumb">
@@ -66,12 +66,12 @@
 </script>
 
 <style lang="less" scoped>
- .wj-banner-swipe{
+ .hjx-banner-swipe{
     text-align: center;
     line-height: 150px;
     // margin-top:10px;
 
-    .wj-banner-item{
+    .hjx-banner-item{
       // padding: 0px 10px;
       box-sizing: border-box;
     }

@@ -1,36 +1,36 @@
 <template>
   <!-- 轮播图 -->
-  <wj-banner 
+  <hjx-banner 
    :banner-list="bannerList"
    margin-top="10"
    padding-left="10"
    padding-right="10"
    :img-size="475/1000"
    radius="16"
-  ></wj-banner>
+  ></hjx-banner>
 
   <!-- 广告位 -->
-  <wj-ad :ad-list="adList1"></wj-ad>
-  <wj-ad :ad-list="adList2"></wj-ad>
+  <hjx-ad :ad-list="adList1"></hjx-ad>
+  <hjx-ad :ad-list="adList2"></hjx-ad>
 
   <!-- 分类商吕 -->
-  <wj-home-goods v-for="item in catHotList" :key="item.cat_id" :goods-list="item"></wj-home-goods>
+  <hjx-home-goods v-for="item in catHotList" :key="item.cat_id" :goods-list="item"></hjx-home-goods>
 
 </template>
 
 <script>
-  import WjBanner from '../base/WjBanner.vue'
-  import WjAd from './child/WjAd.vue'
-  import WjHomeGoods from './child/WjHomeGoods.vue'
+  import hjxBanner from '../base/hjxBanner.vue'
+  import hjxAd from './child/hjxAd.vue'
+  import hjxHomeGoods from './child/hjxHomeGoods.vue'
 
   export default {
 
     props : ['name', 'id'],
 
     components : {
-      WjBanner,
-      WjAd,
-      WjHomeGoods
+      hjxBanner,
+      hjxAd,
+      hjxHomeGoods
     },
 
     data(){

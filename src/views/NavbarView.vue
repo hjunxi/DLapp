@@ -7,10 +7,10 @@
 		<!-- 选项卡切换按钮 -->
 		<van-tabbar 
 		 route 
-		 active-color="#CC3A8C" 
+		 active-color="#33B8FF" 
 		 inactive-color="#666"
 		 z-index="999"
-		 class="wj-tabbar"
+		 class="hjx-tabbar"
 		>
 		  <van-tabbar-item
 				v-for="item in tabbarList"
@@ -79,7 +79,7 @@
 </script>
 
 <style lang="less" scoped>
-	// .wj-tabbar:before{
+	// .hjx-tabbar:before{
 	// 	content: '';
 	// 	position: absolute;
 	// 	left: 0px;

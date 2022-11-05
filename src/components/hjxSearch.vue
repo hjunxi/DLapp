@@ -27,7 +27,7 @@
 
     <!-- 左侧label内容 -->
     <template #label>
-      <span class="logo">LC</span>
+      <span class="logo">DL</span>
     </template>
 
   </van-search>

@@ -80,7 +80,7 @@
 				color : #333
 			}
 			.p-active{
-				color : #cc3a8c;
+				color : #33B8FF;
 				background: #eee;
 			}
 		}

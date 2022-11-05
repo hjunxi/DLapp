@@ -2,13 +2,13 @@
   
   <div id="search-view">
 
-    <wj-search 
+    <hjx-search 
      show-innerleft 
      show-left 
      show-right 
      @clickright="clickRightHandler"
      @clickleft="clickLeftHandler"
-    ></wj-search>
+    ></hjx-search>
 
 
 
@@ -18,11 +18,11 @@
 </template>
 
 <script>
-  import WjSearch from '../components/WjSearch.vue'
+  import hjxSearch from '../components/hjxSearch.vue'
 
   export default {
     components : {
-      WjSearch
+      hjxSearch
     },
 
     data(){

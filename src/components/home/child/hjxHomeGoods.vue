@@ -1,9 +1,9 @@
 <template>
-  <div class="wj-home-goods">
+  <div class="hjx-home-goods">
     <h2>{{goodsList.cat_name}}</h2>
     <!-- 调用商品组件 -->
     <div class="goods-content">
-      <wj-goods v-for="item in goodsList.data" :key="item.goods_id" :goods="item"></wj-goods>
+      <hjx-goods v-for="item in goodsList.data" :key="item.goods_id" :goods="item"></hjx-goods>
     </div>
     <div class="more van-hairline--bottom">
       <span @click="clickMoreHandler">查看更多<van-icon name="arrow"></van-icon></span>
@@ -31,7 +31,7 @@
 </script>
 
 <style lang="less" scoped>
-  .wj-home-goods{
+  .hjx-home-goods{
     padding: 0px 10px;
     h2{
       font-size: 20px;
